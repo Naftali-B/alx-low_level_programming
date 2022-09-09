@@ -1,9 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - Prints out all the letters in
- * the alphabet in order, excluding letter,
- * e and q.
+ * main - Entry point
  * Return: Always 0 (Success)
  */
 
@@ -11,25 +11,29 @@ int main(void)
 
 {
 
-	int l;
+	char low, e, q;
 
 
 
-	/* Initializes l to the ASCII value of 'a' */
+	e = 'e';
 
-	/* Prints out all the letters up until 'z' */
-
-	for (l = 'a'; l <= 'z'; l++)
-
-		if (l != 'e' && l != 'q') 	/* if e/q, skip */
-
-			continue;
-
-		putchar(l); /* Else, continue printing */
+	q = 'q';
 
 
 
-	putchar ('\n');
+	for (low = 'a'; low <= 'z'; low++)
+
+	{
+
+		if (low != e && low != q)
+
+			putchar(low);
+
+	}
+
+		printf("\n");
+
+
 
 	return (0);
 
