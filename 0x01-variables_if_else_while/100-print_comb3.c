@@ -1,45 +1,39 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
+ * main - Prints out all the numbers
+ * between 0 and 99 with non-repeating
+ * digits.
  * Return: Always 0 (Success)
  */
+
+
 
 int main(void)
 
 {
 
-	int d;
+	int f, l;
 
 
 
-	for (d = 0; d < 90; d++)
+	for (f = '0'; f <= '9'; f++)
 
-	{
+		for (l = '0'; l <= '9'; l++)
 
-		for ()
+			if (l > f)
 
-		{
+			{
 
-			putchar((d / 10) + '0');
+				putchar(f), putchar(l);
 
-			putchar((d % 10) + '0');
+				if ((f != '8') || (l != '9'))
 
-		}
+					putchar(','), putchar(' ');
 
-		if (d != 89)
+			}
 
-		{
 
-			putchar(',');
-
-			putchar(' ');
-
-		}
-
-	}
 
 	putchar('\n');
 
