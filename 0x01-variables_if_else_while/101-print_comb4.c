@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *main - prints unique  possible combinations of 3 digits in which 012, 120,
-102, 021, 201, 210 are considered the same combination
- *Return: alway 0
+ * main - prints unique  possible combinations of 3 digits in which 012, 120,
+ * 102, 021, 201, 210 are considered the same combination
+ * Return: alway 0
  */
 
 int main(void)
