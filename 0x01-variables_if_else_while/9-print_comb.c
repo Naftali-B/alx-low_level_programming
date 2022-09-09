@@ -1,9 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - Prints out all the values
- * 0-9 along with spaces and commas
- * acting as seperators.
+ * main - Entry point
  * Return: Always 0 (Success)
  */
 
@@ -11,27 +11,31 @@ int main(void)
 
 {
 
-	int l;
+	int d;
 
 
 
-	for (l = '0'; l <= '9'; l++)
+	for (d = '0'; d <= '9'; d++)
 
-		putchar(l);
+	{
 
-		if (l < 57)
+		putchar(d);
+
+		if (d != '9')
 
 		{
 
-			/* putchar(44); Space | putchar(32); Comma */
+			putchar(',');
 
-			putchar(' '), putchar(',');
+			putchar(' ');
 
 		}
 
+	}
+
+	putchar('\n');
 
 
-	putchar ('\n');
 
 	return (0);
 
