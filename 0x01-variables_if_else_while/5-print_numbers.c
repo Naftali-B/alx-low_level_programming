@@ -1,27 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
+ * main - Prints out all the numbers
+ * between 0 and 9.
  * Return: Always 0 (Success)
  */
+
 
 int main(void)
 
 {
 
-	int i;
+	int l;
 
 
 
-	for (i = 0; i < 10; i++)
+	for (l = 0; l < 10; l++)
 
-		printf("%d", i);
-
-		printf("\n");
+		printf("%d", l);
 
 
+
+	printf("\n");
 
 	return (0);
 
