@@ -1,31 +1,22 @@
 #include "main.h"
 
 /**
-* Adds two integers
+* add - adds two integers and returns the result
+* @n: added to m
+* @m: added to n
+* Return: returns result of addition of two integers
 */
 
-int main() {    
+int add(int n, int m)
+
+{
+
+	int sum;
 
 
 
-    int number1, number2, sum;
+	sum = n + m;
 
-    
-
-    putchar("Enter two integers: ");
-
-    scanf("%d %d", &number1, &number2);
-
-
-
-    // calculating sum
-
-    sum = number1 + number2;      
-
-    
-
-    putchar("%d + %d = %d", number1, number2, sum);
-
-    return 0;
+	return (sum);
 
 }

@@ -25,7 +25,7 @@ int main(void)
 
 	_putchar('r');
 
-	_putchar('\n');
+	_putcha('\n');
 
 	return (0);
 
