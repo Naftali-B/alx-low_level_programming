@@ -12,7 +12,7 @@ int main() {
 
     
 
-    printf("Enter two integers: ");
+    putchar("Enter two integers: ");
 
     scanf("%d %d", &number1, &number2);
 
@@ -24,7 +24,7 @@ int main() {
 
     
 
-    printf("%d + %d = %d", number1, number2, sum);
+    putchar("%d + %d = %d", number1, number2, sum);
 
     return 0;
 
