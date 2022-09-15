@@ -1,24 +1,25 @@
 #include "main.h"
 
 /**
- * print_numbers - prints 0-9 once
- * @sdnums - variable abbre based off
- * single digit numbers for simplicity
+ * print_numbers - check the code for Holberton School students.
+ * Return: zero.
  */
 
 void print_numbers(void)
 
 {
 
-	int sdnums = 0;
+	int a;
 
 
 
-	for (sdnums = '0'; sdnums <= '9'; sdnums++)
+	for (a = 0; a <= 9; a++)
 
-		_putchar(sdnums);
+	{
 
+		_putchar('0' + a);
 
+	}
 
 	_putchar('\n');
 
