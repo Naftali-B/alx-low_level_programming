@@ -1,15 +1,16 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
-* _putchar - print out text
-* Return: void
-*/
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 
-void _putchar(char s)
-
+int _putchar(char c)
 
 {
 
-	putchar(s);
+	return (write(1, &c, 1));
 
 }
