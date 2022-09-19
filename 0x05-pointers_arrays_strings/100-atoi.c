@@ -10,8 +10,8 @@
 int _atoi(char *s)
 
 {
-	char str[10] = "122";
-	int x = atoi(str);
+	/* char str[10] = "122"; */
+	int s = atoi(str);
 
 	return (0);
 
