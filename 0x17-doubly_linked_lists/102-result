@@ -25,8 +25,6 @@ int main()
         }
     }
 
-    printf("Largest palindrome made from the product of two 3-digit numbers is %d\n", largest_palindrome);
-
-    return 0;
+    return largest_palindrome;
 }
 
