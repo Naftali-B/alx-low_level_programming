@@ -7,7 +7,7 @@
  *
  * Return: 1 on success, -1 on failure.
  * -1 if filename is NULL or if the file cannot be opened or written.
- */
+ **/
 int append_text_to_file(const char *filename, char *text_content)
 {
     int fd = open(filename, O_APPEND | O_WRONLY), len = 0;
