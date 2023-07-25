@@ -4,6 +4,10 @@
 #include <unistd.h>
 #include <elf.h>
 
+/**
+ * print_magic - Prints the magic number from the ELF header.
+ * @e_ident: Pointer to the ELF identification array.
+ */
 void print_magic(unsigned char *e_ident) {
     printf("  Magic:   ");
     for (int i = 0; i < EI_NIDENT; i++)
@@ -11,6 +15,10 @@ void print_magic(unsigned char *e_ident) {
     printf("\n");
 }
 
+/**
+ * print_class - Prints the ELF class from the ELF header.
+ * @e_ident: Pointer to the ELF identification array.
+ */
 void print_class(unsigned char e_ident[EI_NIDENT]) {
     printf("  Class:                             ");
     switch (e_ident[EI_CLASS]) {
@@ -25,6 +33,10 @@ void print_class(unsigned char e_ident[EI_NIDENT]) {
     }
 }
 
+/**
+ * print_data - Prints the data encoding from the ELF header.
+ * @e_ident: Pointer to the ELF identification array.
+ */
 void print_data(unsigned char e_ident[EI_NIDENT]) {
     printf("  Data:                              ");
     switch (e_ident[EI_DATA]) {
@@ -39,10 +51,18 @@ void print_data(unsigned char e_ident[EI_NIDENT]) {
     }
 }
 
+/**
+ * print_version - Prints the version of the ELF header.
+ * @e_ident: Pointer to the ELF identification array.
+ */
 void print_version(unsigned char e_ident[EI_NIDENT]) {
     printf("  Version:                           %d (current)\n", e_ident[EI_VERSION]);
 }
 
+/**
+ * print_osabi - Prints the OS/ABI from the ELF header.
+ * @e_ident: Pointer to the ELF identification array.
+ */
 void print_osabi(unsigned char e_ident[EI_NIDENT]) {
     printf("  OS/ABI:                            ");
     switch (e_ident[EI_OSABI]) {
@@ -60,6 +80,10 @@ void print_osabi(unsigned char e_ident[EI_NIDENT]) {
     }
 }
 
+/**
+ * print_abiversion - Prints the ABI version from the ELF header.
+ * @e_ident: Pointer to the ELF identification array.
+ */
 void print_abiversion(unsigned char e_ident[EI_NIDENT]) {
     printf("  ABI Version:                       %d\n", e_ident[EI_ABIVERSION]);
 }
@@ -97,3 +121,4 @@ int main(int argc, char *argv[]) {
     close(fd);
     return 0;
 }
+
