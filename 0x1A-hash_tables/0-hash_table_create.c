@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #include "hash_tables.h"
 
 /**
